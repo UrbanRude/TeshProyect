@@ -1,3 +1,3 @@
 <?php
-echo 'Hello word in controler';s
+echo 'Hello word ';s
 ?>
