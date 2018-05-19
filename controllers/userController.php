@@ -14,6 +14,9 @@
             break;
     }
 
+    /*$controller = new UserController();
+    $controller -> registerUserController('Sofia','APP','APM','101','titulacion');*/
+
 
     class UserController{
 
