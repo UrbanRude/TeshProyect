@@ -1,3 +1,3 @@
 <?php
-    echo "Hello Word with PHP";
+    require_once './views/app/login/login.php'
 ?>
