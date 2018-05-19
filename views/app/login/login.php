@@ -12,9 +12,10 @@
     <label for="user">Usuario:</label>
     <input type="text" id="user">
     <label for="pwd">Contraseña</label>
-    <input type="password" id="pwd">
+    <input type="password" id="password">
     <button id="btnLogin">Ingresar</button>
     </form>
+    <script src="./views/js/sweet.js"></script>
     <script src="./views/js/jquery.js"></script>   
     <script src="./views/app/login/login.js"></script>
 </body>
