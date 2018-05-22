@@ -1,14 +1,11 @@
-<<<<<<< HEAD
 <?php
-=======
-git<?php
->>>>>>> FeatureDurruti
     
     require_once '../models/userModel.php';
 
 
     switch ($_REQUEST['action']) {
         case 'register':
+            
             $userController = new UserController();
             $encriptarPassword = crypt($_POST['password'],'$2a$07$usesomesillystringforsalt$');
             $userController -> validateUserController($_POST['user'],$encriptarPassword);
