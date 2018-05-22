@@ -13,14 +13,6 @@
             <img src="img/logoTesh.bmp">
         </div>
     <form>
-<<<<<<< HEAD
-    <h1>Huevos durruti</h1>
-    <label for="user">Usuario:</label>
-    <input type="text" id="user">
-    <label for="pwd">Contraseña</label>
-    <input type="password" id="password">
-    <button id="btnLogin">Ingresar</button>
-=======
 
         <div class="inputBox">
             <input type="text" name="" require="" id="user" >
@@ -48,7 +40,6 @@
 
     <button type="submit" id="btnLogin">Login</button>
 
->>>>>>> FeatureDurruti
     </form>
     <script src="./views/js/sweet.js"></script>
     <script src="./views/js/jquery.js"></script>   
