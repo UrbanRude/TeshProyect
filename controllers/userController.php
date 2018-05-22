@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <?php
+=======
+git<?php
+>>>>>>> FeatureDurruti
     
     require_once '../models/userModel.php';
 
@@ -13,6 +17,9 @@
             # code...
             break;
     }
+
+    /*$controller = new UserController();
+    $controller -> registerUserController('Sofia','APP','APM','101','titulacion');*/
 
 
     class UserController{
