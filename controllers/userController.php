@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <?php
+=======
+git<?php
+>>>>>>> FeatureDurruti
     
     require_once '../models/userModel.php';
 

@@ -1,3 +1,101 @@
-div{
-    
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url(Pantalla.jpg);
+    background-size: cover;
+}
+.bot img
+{
+    width: 100%;
+    position: relative;
+    top: 44.9em;
+}
+.top img
+{
+    width: 100%;
+}
+.box
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(128.5%,-80%);
+    width: 350px;
+    padding: 60px;
+    background: rgba(white);
+    box-sizing: border-box;
+}
+.box h2
+{
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+.box .logoTesh img
+{
+    width: 80%;
+    height: 80%;
+    margin-bottom: 40px;
+}
+.box .inputBox
+{
+    position: relative;
+}
+.box .inputBox input
+{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: black;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    background: transparent;
+}
+.box .inputBox label
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: black;
+    pointer-events: none;
+    translate: 5s;
+}
+
+.box .checkbox input
+{
+    position:relative; 
+    margin-bottom:20px;
+}
+.box .lock img
+{
+    width: 4%;
+    height: 4%;
+}
+
+.box .inputBox input:focus ~ label,
+.box .inputBox input:valid ~ label
+{
+    top: -20px;
+    left: 0;
+    color: #03a9f4;
+    font-size: 12px;
+}
+.box button[type="submit"]
+{
+    margin-top: 20px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #03a9f4;
+    padding: 10px 95px;
+    cursor: pointer;
+    border-radius: 50px;
 }
