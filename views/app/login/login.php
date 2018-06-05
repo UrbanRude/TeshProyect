@@ -14,12 +14,12 @@
         </div>
     <form>
         <div class="inputBox">
-            <input type="text" name="" require="" id="user" >
-            <label for="user">Usuario:</label>  
+            <input type="text" name="user" require="" id="user" >
+            <label>Usuario:</label>  
         </div>
         <div class="inputBox">
-            <input type="password" name="" require="" id="password" >
-            <label for="pwd">Contraseña</label>
+            <input type="password" name="password" require="" id="password" >
+            <label>Contraseña</label>
         </div>
             <div class="checkbox">
                 <label>
@@ -40,17 +40,22 @@
         $('#btnLogin').click(function(e){
             e.preventDefault();
             let params = {'user':$('#user').val(),'password':$('#password').val()};
-            $.ajax({
+
+            if(params.user != params.password){
+                $.ajax({
                 url:'./controllers/userController.php?action=register',
                 type:'POST',
                 data:params,
                 success:(data) =>{
+                    console.log(data);
                     data == 1 ? 
-                    location.href = "./views/app/panel/panel.php"
-                    /*swal("Welcome", "No mames perro", "success")*/ :
+                    location.href = "./views/app/panel/panel.php" :
                         swal("Opss !", "Usuarios y/o password incorrecto", "error"); 
                 }
             });
+            }else{
+                location.href = "./views/app/first_login/first_login.php";
+            }
         });
     </script>
     </div>

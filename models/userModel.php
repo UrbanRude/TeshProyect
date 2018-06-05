@@ -24,6 +24,10 @@
             return $stmt -> fetch();
         }
 
+        public function updatePassword($idUser,$password){
+            
+        }
+
     }
 
 ?>
