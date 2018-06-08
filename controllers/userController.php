@@ -15,8 +15,8 @@
             break;
     }
 
-    /*$controller = new UserController();
-    $controller -> registerUserController('Sofia','APP','APM','101','titulacion');*/
+    // $controller = new UserController();
+    // $controller -> registerUserController('Sofia','S','S','200','200');
 
 
     class UserController{
@@ -24,7 +24,7 @@
         public function validateUserController($user,$pwd){
             $respuestaModel = UserModel::validateLoginModel($user,$pwd);
             $encriptarPassword = crypt($_POST['password'],'$2a$07$usesomesillystringforsalt$');
-            if($respuestaModel['usuario'] == $user && $respuestaModel['pwd'] == $encriptarPassword){
+            else if($respuestaModel['usuario'] == $user && $respuestaModel['pwd'] == $encriptarPassword){
                 echo "1";
             }else{
                 echo "2";

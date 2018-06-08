@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -24,3 +25,8 @@
         </header>
     </body>
 </html>
+=======
+<?php 
+    echo "Hello Word!!";
+?>
+>>>>>>> a8c907a40e1f3f7adb54549561f80a7db13ed5f3
