@@ -1,34 +1,39 @@
-body
+.encabezado
 {
-    margin: 0;
-    font-family: sans-serif;
+width: 1110px;
+margin: 0 auto;
+position: relative;
+display: flex; 
+justify-content: space-between;
 }
-header
+.logoTesh img
 {
-    width: 100%;
-    background: #4e94ab;
+    width: 200px;
+    height: 80px;
 }
-#btn-menu
+.logoGob img
 {
-    display: none;
+    width: 200px;
+    height: 80px;
 }
-header label 
+
+.barra
 {
-    display: none;
-    width: 30px;
-    height: 30px;
-    padding: 15px;
-    border-right: 1px solid #fff;
+    width: 1110px;
+    margin: 0 auto;
+    position: relative;
+    display: flex; 
+    background: #fafafa;
+    border: 1px solid #d4d4d4;
+    justify-content: center;
+    padding: 12px 17px;
+    font-size: large;
+    border-radius: 5px;
 }
-header label img
+
+    .menu
 {
-    width: 30px;
-    height: 30px;
-}
-header label:hover
-{
-    cursor: pointer;
-    background: rgba(0,0,0,0.3);
+    margin-top: 10px;
 }
 .menu ul
 {
@@ -36,10 +41,15 @@ header label:hover
     list-style: none;
     padding: 0;
     display: flex;
+    justify-content: center;
+    border: 1px;
+    
 }
 .menu li
 {
-    border-right: 1px solid #fff;
+    border-right: 1px solid #d4d4d4;
+    font-size: 20px;
+    box-sizing: border-box;
 }
 .menu li:hover
 {
@@ -49,35 +59,20 @@ header label:hover
 {
     display: block;
     padding: 15px 20px;
-    color: #fff;
+    color: #273746;
     text-decoration: none;
 }
-
-@media (max-width:768px)
+.imagen
 {
-    header label
-    {
-        display: block
-    }
-    
-    .menu
-    {
-        position: absolute;
-        background: #4e94ab;
-        width: 50%;
-        margin-left: -70%;
-        transition: all 0.5s;
-    }
-    
-    .menu ul
-    {
-        flex-direction: column;
-    }
-    .menu li
-    {
-        border-top: 1px solid #fff;
-    }
-    #btn-menu:checked ~ .menu{
-        margin: 0;
-    }
+width: 150px;
+height: 150px;
 }
+
+.abajo
+{
+    margin-top: 300px;
+    border-top: 1px solid #d4d4d4;
+    font-size: 12px;
+}
+
+
